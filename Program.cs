@@ -1,4 +1,6 @@
 
+using TgChatbot.Services;
+
 namespace TgChatbot
 {
     public class Program
@@ -10,6 +12,7 @@ namespace TgChatbot
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddScoped<ChatService>();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
